@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Demo Frontend Website</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Meta -->
+  <meta name="description" content="Simple responsive frontend template — hero, services, portfolio, contact, dark mode.">
+</head>
+<body>
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a href="#" class="brand">MeriSite</a>
+
+      <nav class="nav" id="nav" aria-label="Main Navigation">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="darkToggle" aria-pressed="false" title="Toggle dark mode">🌙</button>
+        <button id="menuToggle" class="menu-toggle" aria-expanded="false" aria-controls="nav" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Professional Frontend Design</h1>
+          <p>Modern, responsive, and accessible website templates ready to customize. Built with HTML, CSS and vanilla JavaScript.</p>
+          <p class="cta-row">
+            <a href="#contact" class="btn btn-primary">Contact Kijiye</a>
+            <a href="#portfolio" class="btn btn-ghost">Dekhiye Portfolio</a>
+          </p>
+        </div>
+        <div class="hero-visual" role="img" aria-label="Illustrative laptop and design mockups">
+          <!-- simple SVG illustration or image -->
+          <img src="https://images.unsplash.com/photo-1523475496153-3d6cc2f6b88b?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Design mockups">
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section services">
+      <div class="container">
+        <h2 class="section-title">Services</h2>
+        <p class="section-sub">Main services jo main provide karta hoon</p>
+
+        <div class="services-grid" aria-live="polite">
+          <article class="card">
+            <h3>Responsive Websites</h3>
+            <p>Mobile-first design, fast load times, and cross-browser compatibility.</p>
+          </article>
+
+          <article class="card">
+            <h3>UI/UX Design</h3>
+            <p>Clean interfaces with focus on accessibility and usability.</p>
+          </article>
+
+          <article class="card">
+            <h3>Single Page Apps</h3>
+            <p>Lightweight interactivity with vanilla JS or frameworks.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="section portfolio">
+      <div class="container">
+        <h2 class="section-title">Portfolio</h2>
+        <p class="section-sub">Kuch recent projects</p>
+
+        <div class="grid portfolio-grid">
+          <figure class="portfolio-item">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Project 1">
+            <figcaption>
+              <strong>Project One</strong>
+              <span>Landing page redesign</span>
+            </figcaption>
+          </figure>
+
+          <figure class="portfolio-item">
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Project 2">
+            <figcaption>
+              <strong>Project Two</strong>
+              <span>eCommerce front-end</span>
+            </figcaption>
+          </figure>
+
+          <figure class="portfolio-item">
+            <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Project 3">
+            <figcaption>
+              <strong>Project Three</strong>
+              <span>Dashboard UI</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section about">
+      <div class="container about-grid">
+        <div>
+          <h2 class="section-title">About Me</h2>
+          <p>Frontend developer with focus on performance & accessibility. Main semantic HTML, scalable CSS aur clean JS likhta hoon.</p>
+          <ul>
+            <li>10+ projects delivered</li>
+            <li>Performance & Accessibility first</li>
+            <li>Design systems & component-driven approach</li>
+          </ul>
+        </div>
+        <div class="about-card card">
+          <h3>Quick Facts</h3>
+          <p><strong>Location:</strong> India</p>
+          <p><strong>Availability:</strong> Freelance & full-time</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <p class="section-sub">Form bhar kar message bhejiye — ye form frontend validation karta hai (no backend included).</p>
+
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="form-row">
+            <label for="name">Naam</label>
+            <input id="name" name="name" type="text" placeholder="Aapka naam" required minlength="2">
+            <small class="hint" aria-hidden="true">Kam se kam 2 akshar</small>
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="aap@udahran.com" required>
+            <small class="hint">Valid email chahiye</small>
+          </div>
+
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Aapka message..." required minlength="10"></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <button type="reset" class="btn btn-ghost">Reset</button>
+          </div>
+
+          <p id="formStatus" role="status" aria-live="polite" class="form-status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> MeriSite. All rights reserved.</p>
+      <p class="small">Built with ❤️ — Frontend demo</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
